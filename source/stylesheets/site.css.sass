@@ -4,10 +4,14 @@
 //body//
 
 body
+  background: url("/images/space.jpg")
+  background-size: cover
+  background-repeat: no-repeat
   background-color: black
   text-transform: uppercase
   font: normal 62.5% "stellar"
   color: white
+
 
 
 h1
@@ -37,14 +41,19 @@ a
   width: 100vw
   z-index: -1
 
-header
+header, footer
   display: flex
   justify-content: space-between
   align-items: center
   width: 100vw
-  position: absolute
-  padding: 30px
+  padding: 40px
   z-index: 1
+header
+  position: absolute
+footer
+  background-color: black
+  p
+    font-size: 1.4em
 
 .pnca
   height: 120px
@@ -53,21 +62,22 @@ header
   display: inline-block
   padding: 0 50px
   outline: 2px solid white
-  font: .1em "cart"
+  font: 2em "cart"
+  text-decoration: none
   line-height: 75px
-
-.signup:hover
-  background-color: #fee000
+  transition: .2s ease-in-out
+  &:hover
+    background-color: #fee000
+    color: black
+    outline-color: black
 
 
 .logoblock_container
   display: flex
   height: 100vh
+  text-align: center
 
 .logoblock
   margin: auto
 
 //
-
-footer
-  padding: 50px 0

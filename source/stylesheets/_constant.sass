@@ -4,6 +4,14 @@
   box-sizing: border-box
   position: relative
 
+=bp_tablet
+  @media screen and (max-device-width: 1260px), (max-width: 1260px)
+    @content
+
+=bp_phone
+  @media screen and (max-device-width: 767px), (max-width: 767px)
+    @content
+
 //fonts//
 
 @font-face

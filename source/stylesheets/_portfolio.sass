@@ -8,6 +8,8 @@ main
   scroll-snap-type: y mandatory
   scroll-snap-align: start
   scroll-snap-stop: always
+  +bp_phone
+    scroll-snap-type: none
 
 
 section
@@ -24,6 +26,11 @@ section
     flex: 0 0 calc(24.7vw - 20px)
     overflow: hidden
     margin: 10px
+    +bp_tablet
+      flex: 0 0 calc(49.7vw - 20px)
+    +bp_phone
+      flex: 0 0 calc(100vw - 20px)
+
     &:after
       display: block
       width: 100%
@@ -49,6 +56,8 @@ section
     height: calc(24.7vw - 20px)
     object-fit: cover
     mix-blend-mode: normal
+    +bp_phone
+      height: 400px
     //border-radius: 50%
 
 .artist-info

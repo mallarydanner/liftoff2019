@@ -13,6 +13,9 @@ body
   color: white
 
 
+.desktop
+  +bp_phone
+    display: none
 
 h1
   font:  27em "rainer"
@@ -21,13 +24,20 @@ h1
   color: #fee000
   transform: scaleY(1.75)
   line-height: 1.75em
+  +bp_phone
+    font-size: 15em
+
 
 h2
   font: 1.9em "stellar"
   color: white
+  +bp_phone
+    font-size: 1.4em
 
 h3
   font: 1.4em "cart"
+  +bp_phone
+    font-size: 1.2
 
 a
   color: white
@@ -48,15 +58,24 @@ header, footer
   width: 100vw
   padding: 40px
   z-index: 1
+  +bp_phone
+    padding: 20px
 header
   position: absolute
 footer
   background-color: black
+  +bp_phone
+    flex-direction: column
   p
     font-size: 1.4em
+    +bp_phone
+      font-size: 1.2em
+      margin-bottom: 20px
 
 .pnca
   height: 120px
+  +bp_phone
+    height: 60px
 
 .signup
   display: inline-block
@@ -66,6 +85,10 @@ footer
   text-decoration: none
   line-height: 75px
   transition: .2s ease-in-out
+  +bp_phone
+    font-size: 1.6em
+    line-height: 60px
+    padding: 0 30px
   &:hover
     background-color: #fee000
     color: black
